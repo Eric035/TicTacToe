@@ -1,5 +1,5 @@
-// Student name: Cheuk Hang Leung (Eric)
-// McGill ID: 260720788
+/************An Eric Leung Production***********/
+/*A simple tictactoe game written in Java*/
 
 import java.util.Scanner;
 import java.util.Random;
