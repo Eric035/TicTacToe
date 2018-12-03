@@ -11,7 +11,7 @@ import java.util.Random;
             play();
         }
 
-        public static char[][] createBoard (int n)  // Part A
+        public static char[][] createBoard (int n)  // Creates a game board of size depending on the user's inputs.
         {
             char[][] board = new char[n][n];
             for (int i = 0; i < board.length; i++)
@@ -24,7 +24,7 @@ import java.util.Random;
             return board;
         }
 
-        public static void displayBoard (char[][] gameBoard)  // (Part B) A method to print out a game board and updates every round
+        public static void displayBoard (char[][] gameBoard)  // A method to print out a game board and updates every round
         {
             for (int i = 0; i < gameBoard.length; i++)
             {
@@ -51,7 +51,7 @@ import java.util.Random;
             System.out.println();
         }
 
-        public static void writeOnBoard (char[][] board, char stuffToWrite, int x, int y)  /* (Part C) This method prevents the errors while user
+        public static void writeOnBoard (char[][] board, char stuffToWrite, int x, int y)  /* This method prevents the errors while user
    inputting an element. */
         {
             if (x >= board.length || y >= board.length)
@@ -66,7 +66,7 @@ import java.util.Random;
             board[x][y] = stuffToWrite;
         }
 
-        public static void getUserMove (char[][] board)  // (Part D) This method simply for getting a valid input from the user.
+        public static void getUserMove (char[][] board)  // This method simply for getting a valid input from the user.
         {
             Scanner player1Move = new Scanner(System.in);
             System.out.println ("Please type in your move. Be sure to put a space between the coordinates, thank you.");
@@ -267,7 +267,7 @@ import java.util.Random;
             return false;
         }
 
-        public static void getAIMove (char[][] board)  // (Part F) When there isn't an obvious move, then this method generates a valid random coordinate for the AI.
+        public static void getAIMove (char[][] board)  // When there isn't an obvious move, then this method generates a valid random coordinate for the AI.
         {
             Random ranNum = new Random();
 
@@ -288,7 +288,7 @@ import java.util.Random;
             }
         }
 
-        public static char checkForWinner (char[][] board)  // (Part G) Check if there is a winner.
+        public static char checkForWinner (char[][] board)  // Check if there is a winner.
         {
             if (checkColumnForWinner (board) == 'o' || checkRowForWinner (board) == 'o'
                     || checkDiagonalForWinner (board) == 'o' || checkAntiDiagonalForWinner (board) == 'o')
@@ -303,7 +303,7 @@ import java.util.Random;
             return ' ';
         }
 
-        public static char checkColumnForWinner (char[][] board)  // Helper Method for Part G (check column for winner)
+        public static char checkColumnForWinner (char[][] board)  // (check column for winner)
         {
             int counter;
             int oCounter;
@@ -422,7 +422,7 @@ import java.util.Random;
             return ' ';
         }
 
-        public static void play ()  // (Part H) To initiate the game Tic Tac Toe
+        public static void play ()  // To initiate the game Tic Tac Toe
         {
             Scanner scan = new Scanner (System.in);
             System.out.println ("Hello there:) Please enter your name below: ");
