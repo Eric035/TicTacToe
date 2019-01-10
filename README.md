@@ -1,4 +1,4 @@
-#This program allows to play TicTacToe with an "intelligent" A.I.
+#This program allows the user to play TicTacToe with an "intelligent" A.I.
 
 Instructions: 
 1. Type in your name.
